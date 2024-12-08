@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+}
+
+body {
+  background: hsl(216, 12%, 8%);
+}
+
+.container {
+  background: hsl(213, 19%, 18%);
+  width: 20%;
+  margin: 300px auto 0;
+  border-radius: 25px;
+  padding-bottom: 1px;
+}
+
+.star-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: hsl(215, 19%, 26%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 25px;
+  left: 20px;
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-top: 55px;
+  margin-left: 20px;
+  font-size: 24px;
+}
+
+p {
+  color: hsl(217, 20%, 79%);
+  margin-left: 20px;
+  font-weight: 400;
+  margin-top: 17px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  gap: 30px;
+}
+
+.num-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+  background: hsl(215, 19%, 26%);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.num-rate:active {
+  background: hsl(25, 97%, 53%);
+}
+
+.btn-submit {
+  font-weight: bold;
+  background: hsl(25, 97%, 53%);
+  color: black;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 15px;
+  width: 87%;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.btn-submit:active {
+  color: black;
+  background: hsl(0, 0%, 100%);
+}
+
+.container-submit {
+  background: hsl(213, 19%, 18%);
+  width: 20%;
+  margin: 300px auto 0;
+  border-radius: 25px;
+  padding-bottom: 1px;
+}
+
+.submit-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 35px;
+}
+
+.submit-selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(215, 19%, 26%);
+  color: hsl(25, 97%, 53%);
+  margin-top: 65px;
+  padding: 5px;
+  width: 50%;
+  margin-left: 90px;
+  border-radius: 20px;
+}
+
+.text-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h3-submit {
+  font-size: 30px;
+  margin-left: -1px;
+  margin-top: 25px;
+}
+
+.p-submit {
+  padding: 11px;
+  margin-bottom: 20px;
+}
+
+.second-row {
+  padding-left: 5px;
+}
+
+.third-row {
+  display: block;
+  text-align: center;
+}
+
+.container-submit {
+  display: none;
+}
+
+.active-btn {
+  color: black;
+  background: hsl(25, 97%, 53%);
+}
+
+.selected-btn {
+  color: black;
+  background: hsl(0, 0%, 100%);
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 375px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .container,
+  .container-submit {
+    width: 90%; /* Full width on small screens */
+    margin: 0 auto;
+    padding: 15px;
+  }
+
+  .star-icon {
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 15px;
+  }
+
+  h3 {
+    font-size: 18px; /* Smaller font for mobile */
+    margin-top: 25px;
+  }
+
+  p {
+    font-size: 12px; /* Smaller font for mobile */
+    margin-top: 5px;
+  }
+
+  .rating {
+    gap: 30px;
+    margin-top: 15px;
+  }
+
+  .num-rate {
+    height: 30px;
+    width: 30px;
+    font-size: 12px; /* Adjusted font size */
+  }
+
+  .btn-submit {
+    width: 90%; /* Button fills the screen on mobile */
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .submit-img {
+    top: 10px;
+  }
+
+  .submit-selected {
+    width: 70%; /* Adjusted size */
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+
+  .h3-submit {
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .p-submit {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
